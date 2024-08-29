@@ -1,0 +1,2857 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0711.1636                               -->
+<workbook original-version='18.1' source-build='2024.2.1 (20242.24.0711.1636)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='data_final_1' inline='true' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='data_final_1' name='textscan.1tjn98v1y5wpi916kjuvb0a2gktt'>
+            <connection class='textscan' directory='C:/Users/FX516/Desktop/Codes/DatAnalist/DatAnalist/LAB/Semana5/Proyecto2/clean_data' filename='data_final_1.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1tjn98v1y5wpi916kjuvb0a2gktt' name='data_final_1.csv' table='[data_final_1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='client_id' ordinal='1' />
+            <column datatype='string' name='visitor_id' ordinal='2' />
+            <column datatype='string' name='visit_id' ordinal='3' />
+            <column datatype='string' name='process_step' ordinal='4' />
+            <column datatype='datetime' name='date_time' ordinal='5' />
+            <column datatype='string' name='Variation_x' ordinal='6' />
+            <column datatype='string' name='Variation_y' ordinal='7' />
+            <column datatype='real' name='clnt_tenure_yr' ordinal='8' />
+            <column datatype='real' name='clnt_tenure_mnth' ordinal='9' />
+            <column datatype='real' name='clnt_age' ordinal='10' />
+            <column datatype='string' name='gendr' ordinal='11' />
+            <column datatype='real' name='num_accts' ordinal='12' />
+            <column datatype='real' name='bal' ordinal='13' />
+            <column datatype='real' name='calls_6_mnth' ordinal='14' />
+            <column datatype='real' name='logons_6_mnth' ordinal='15' />
+            <column datatype='real' name='time_spend' ordinal='16' />
+            <column datatype='real' name='user_error' ordinal='17' />
+            <column datatype='string' name='age_category' ordinal='18' />
+            <column datatype='string' name='balance_category' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1tjn98v1y5wpi916kjuvb0a2gktt' name='data_final_1.csv' table='[data_final_1#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='F1' ordinal='0' />
+            <column datatype='integer' name='client_id' ordinal='1' />
+            <column datatype='string' name='visitor_id' ordinal='2' />
+            <column datatype='string' name='visit_id' ordinal='3' />
+            <column datatype='string' name='process_step' ordinal='4' />
+            <column datatype='datetime' name='date_time' ordinal='5' />
+            <column datatype='string' name='Variation_x' ordinal='6' />
+            <column datatype='string' name='Variation_y' ordinal='7' />
+            <column datatype='real' name='clnt_tenure_yr' ordinal='8' />
+            <column datatype='real' name='clnt_tenure_mnth' ordinal='9' />
+            <column datatype='real' name='clnt_age' ordinal='10' />
+            <column datatype='string' name='gendr' ordinal='11' />
+            <column datatype='real' name='num_accts' ordinal='12' />
+            <column datatype='real' name='bal' ordinal='13' />
+            <column datatype='real' name='calls_6_mnth' ordinal='14' />
+            <column datatype='real' name='logons_6_mnth' ordinal='15' />
+            <column datatype='real' name='time_spend' ordinal='16' />
+            <column datatype='real' name='user_error' ordinal='17' />
+            <column datatype='string' name='age_category' ordinal='18' />
+            <column datatype='string' name='balance_category' ordinal='19' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>client_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[client_id]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>client_id</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visitor_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[visitor_id]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>visitor_id</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>visit_id</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[visit_id]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>visit_id</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>process_step</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[process_step]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>process_step</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_time</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[date_time]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>date_time</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation_x</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Variation_x]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>Variation_x</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Variation_y</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Variation_y]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>Variation_y</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_yr</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[clnt_tenure_yr]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>clnt_tenure_yr</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_tenure_mnth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[clnt_tenure_mnth]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>clnt_tenure_mnth</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>clnt_age</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[clnt_age]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>clnt_age</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gendr</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[gendr]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>gendr</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_accts</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[num_accts]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>num_accts</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>bal</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[bal]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>bal</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>calls_6_mnth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[calls_6_mnth]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>calls_6_mnth</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>logons_6_mnth</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[logons_6_mnth]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>logons_6_mnth</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>time_spend</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[time_spend]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>time_spend</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>user_error</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[user_error]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>user_error</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>age_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[age_category]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>age_category</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>balance_category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[balance_category]</local-name>
+            <parent-name>[data_final_1.csv]</parent-name>
+            <remote-alias>balance_category</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+      <column caption='Variation y' datatype='string' name='[Variation_y]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='data_final_1.csv' datatype='table' name='[__tableau_internal_object_id__].[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]' role='measure' type='quantitative' />
+      <column caption='Age Category' datatype='string' name='[age_category]' role='dimension' type='nominal' />
+      <column caption='Bal' datatype='real' name='[bal]' role='measure' type='quantitative' />
+      <column caption='Balance Category' datatype='string' name='[balance_category]' role='dimension' type='nominal' />
+      <column caption='Calls 6 Mnth' datatype='real' name='[calls_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+      <column caption='Clnt Age' datatype='real' name='[clnt_age]' role='measure' type='quantitative' />
+      <column caption='Clnt Tenure Mnth' datatype='real' name='[clnt_tenure_mnth]' role='measure' type='quantitative' />
+      <column caption='Clnt Tenure Yr' datatype='real' name='[clnt_tenure_yr]' role='dimension' type='quantitative' />
+      <column caption='Date Time' datatype='datetime' name='[date_time]' role='dimension' type='ordinal' />
+      <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+      <column caption='Logons 6 Mnth' datatype='real' name='[logons_6_mnth]' role='measure' type='quantitative' />
+      <column caption='Num Accts' datatype='real' name='[num_accts]' role='measure' type='quantitative' />
+      <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+      <column caption='Time Spend' datatype='real' name='[time_spend]' role='measure' type='quantitative' />
+      <column caption='User Error' datatype='real' name='[user_error]' role='measure' type='quantitative' />
+      <column caption='Visit Id' datatype='string' name='[visit_id]' role='dimension' type='nominal' />
+      <column caption='Visitor Id' datatype='string' name='[visitor_id]' role='dimension' type='nominal' />
+      <column-instance column='[balance_category]' derivation='None' name='[none:balance_category:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='es_ES' class='hyper' dbname='C:/Users/FX516/AppData/Local/Temp/TableauTemp/#TableauTemp_075167l1ok4lww1h75sq711pmw07.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='08/08/2024 02:32:41 PM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>321195</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>client_id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[client_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>client_id</remote-alias>
+              <ordinal>1</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>132833</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>visitor_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[visitor_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>visitor_id</remote-alias>
+              <ordinal>2</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>135588</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>visit_id</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[visit_id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>visit_id</remote-alias>
+              <ordinal>3</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>159203</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>process_step</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[process_step]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>process_step</remote-alias>
+              <ordinal>4</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_time</remote-name>
+              <remote-type>135</remote-type>
+              <local-name>[date_time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_time</remote-alias>
+              <ordinal>5</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>310413</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Variation_x</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Variation_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Variation_x</remote-alias>
+              <ordinal>6</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Variation_y</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Variation_y]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Variation_y</remote-alias>
+              <ordinal>7</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clnt_tenure_yr</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[clnt_tenure_yr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clnt_tenure_yr</remote-alias>
+              <ordinal>8</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>81</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clnt_tenure_mnth</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[clnt_tenure_mnth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clnt_tenure_mnth</remote-alias>
+              <ordinal>9</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1145</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>clnt_age</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[clnt_age]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>clnt_age</remote-alias>
+              <ordinal>10</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>228</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gendr</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[gendr]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gendr</remote-alias>
+              <ordinal>11</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_accts</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[num_accts]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_accts</remote-alias>
+              <ordinal>12</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>bal</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[bal]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>bal</remote-alias>
+              <ordinal>13</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>132833</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>calls_6_mnth</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[calls_6_mnth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>calls_6_mnth</remote-alias>
+              <ordinal>14</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>logons_6_mnth</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[logons_6_mnth]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>logons_6_mnth</remote-alias>
+              <ordinal>15</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>time_spend</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[time_spend]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>time_spend</remote-alias>
+              <ordinal>16</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1232</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>user_error</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[user_error]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>user_error</remote-alias>
+              <ordinal>17</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>age_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[age_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>age_category</remote-alias>
+              <ordinal>18</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>balance_category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[balance_category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>balance_category</remote-alias>
+              <ordinal>19</ordinal>
+              <family>data_final_1.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:balance_category:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Medium&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Very High&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;High&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Estados Unidos&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='data_final_1.csv' id='data_final_1.csv_0EA05A2E2CAE487C96EE534CC0B108E0'>
+            <properties context=''>
+              <relation connection='textscan.1tjn98v1y5wpi916kjuvb0a2gktt' name='data_final_1.csv' table='[data_final_1#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='F1' ordinal='0' />
+                  <column datatype='integer' name='client_id' ordinal='1' />
+                  <column datatype='string' name='visitor_id' ordinal='2' />
+                  <column datatype='string' name='visit_id' ordinal='3' />
+                  <column datatype='string' name='process_step' ordinal='4' />
+                  <column datatype='datetime' name='date_time' ordinal='5' />
+                  <column datatype='string' name='Variation_x' ordinal='6' />
+                  <column datatype='string' name='Variation_y' ordinal='7' />
+                  <column datatype='real' name='clnt_tenure_yr' ordinal='8' />
+                  <column datatype='real' name='clnt_tenure_mnth' ordinal='9' />
+                  <column datatype='real' name='clnt_age' ordinal='10' />
+                  <column datatype='string' name='gendr' ordinal='11' />
+                  <column datatype='real' name='num_accts' ordinal='12' />
+                  <column datatype='real' name='bal' ordinal='13' />
+                  <column datatype='real' name='calls_6_mnth' ordinal='14' />
+                  <column datatype='real' name='logons_6_mnth' ordinal='15' />
+                  <column datatype='real' name='time_spend' ordinal='16' />
+                  <column datatype='real' name='user_error' ordinal='17' />
+                  <column datatype='string' name='age_category' ordinal='18' />
+                  <column datatype='string' name='balance_category' ordinal='19' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 13'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B2D1F66E-3380-42F5-A169-CF673659E89E}' />
+    </worksheet>
+    <worksheet name='age'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column-instance column='[client_id]' derivation='Count' name='[cnt:client_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Gendr' datatype='string' name='[gendr]' role='dimension' type='nominal' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[gendr]' derivation='None' name='[none:gendr:nk]' pivot='key' type='nominal' />
+            <column-instance column='[client_id]' derivation='Count' name='[pcto:cnt:client_id:qk:4]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Pane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:gendr:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:gendr:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:gendr:nk]' member='&quot;U&quot;' />
+                <groupfilter function='member' level='[none:gendr:nk]' member='&quot;X&quot;' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:gendr:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' />
+              <text column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[pcto:cnt:client_id:qk:4]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]</rows>
+        <cols>([federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:gendr:nk] / [federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk])</cols>
+      </table>
+      <simple-id uuid='{8A7F3A5A-205D-4079-A265-C3958C62B831}' />
+    </worksheet>
+    <worksheet name='alto_valor'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column-instance column='[user_error]' derivation='Avg' name='[avg:user_error:qk]' pivot='key' type='quantitative' />
+            <column caption='Balance Category' datatype='string' name='[balance_category]' role='dimension' type='nominal' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[balance_category]' derivation='None' name='[none:balance_category:nk]' pivot='key' type='nominal' />
+            <column caption='User Error' datatype='real' name='[user_error]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk]'>
+            <groupfilter function='member' level='[none:balance_category:nk]' member='&quot;Very High&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[avg:user_error:qk]</rows>
+        <cols>([federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk] / [federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk])</cols>
+      </table>
+      <simple-id uuid='{4E0CDC17-5306-4A6B-9ACA-998DAFDCF218}' />
+    </worksheet>
+    <worksheet name='alto_valor2'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column-instance column='[time_spend]' derivation='Avg' name='[avg:time_spend:qk]' pivot='key' type='quantitative' />
+            <column caption='Balance Category' datatype='string' name='[balance_category]' role='dimension' type='nominal' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[balance_category]' derivation='None' name='[none:balance_category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column caption='Time Spend' datatype='real' name='[time_spend]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk]'>
+            <groupfilter function='member' level='[none:balance_category:nk]' member='&quot;Very High&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:process_step:nk]' />
+              <groupfilter function='member' level='[none:process_step:nk]' member='&quot;confirm&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk]</column>
+            <column>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[avg:time_spend:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[avg:time_spend:qk]</rows>
+        <cols>([federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk] / ([federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk] / [federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]))</cols>
+      </table>
+      <simple-id uuid='{ECEBB226-2163-46BD-99EE-5E62E8C1B159}' />
+    </worksheet>
+    <worksheet name='balance'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column caption='Balance Category' datatype='string' name='[balance_category]' role='dimension' type='nominal' />
+            <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column-instance column='[client_id]' derivation='Count' name='[cnt:client_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[balance_category]' derivation='None' name='[none:balance_category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]</rows>
+        <cols>([federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk] / [federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk])</cols>
+      </table>
+      <simple-id uuid='{4CEC1C89-6499-4795-8443-A451A55B6ACD}' />
+    </worksheet>
+    <worksheet name='balance_diff'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column caption='Balance Category' datatype='string' name='[balance_category]' role='dimension' type='nominal' />
+            <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column-instance column='[client_id]' derivation='Count' name='[cnt:client_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[balance_category]' derivation='None' name='[none:balance_category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[client_id]' derivation='Count' name='[pcto:cnt:client_id:qk:2]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='CellInPane' type='PctTotal' />
+            </column-instance>
+          </datasource-dependencies>
+          <manual-sort column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Very High&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='661' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' />
+              <wedge-size column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' />
+              <size column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' />
+              <text column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[pcto:cnt:client_id:qk:2]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{D424F1C7-71F5-43CF-AAB5-2807EBB52B21}' />
+    </worksheet>
+    <worksheet name='balance_time'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column-instance column='[clnt_tenure_mnth]' derivation='Avg' name='[avg:clnt_tenure_mnth:qk]' pivot='key' type='quantitative' />
+            <column caption='Balance Category' datatype='string' name='[balance_category]' role='dimension' type='nominal' />
+            <column caption='Clnt Tenure Mnth' datatype='real' name='[clnt_tenure_mnth]' role='measure' type='quantitative' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[balance_category]' derivation='None' name='[none:balance_category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;Medium&quot;</bucket>
+              <bucket>&quot;High&quot;</bucket>
+              <bucket>&quot;Very High&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk]' />
+              <text column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[avg:clnt_tenure_mnth:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[avg:clnt_tenure_mnth:qk]</rows>
+        <cols>([federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk] / [federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk])</cols>
+      </table>
+      <simple-id uuid='{C51B6111-6757-41B2-A467-9CC3DD917CDC}' />
+    </worksheet>
+    <worksheet name='edades'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column caption='Clnt Age' datatype='real' name='[clnt_age]' role='measure' type='quantitative' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[clnt_age]' derivation='None' name='[none:clnt_age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[clnt_age]' derivation='Sum' name='[sum:clnt_age:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[sum:clnt_age:qk]' />
+              <size column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[sum:clnt_age:qk]' />
+              <text column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:clnt_age:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]</cols>
+      </table>
+      <simple-id uuid='{A478ACD4-1FF3-4EE0-B86B-31C89C9EF1F5}' />
+    </worksheet>
+    <worksheet name='edades_2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>edades por categoria</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column caption='Age Category' datatype='string' name='[age_category]' role='dimension' type='nominal' />
+            <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column-instance column='[client_id]' derivation='Count' name='[cnt:client_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[age_category]' derivation='None' name='[none:age_category:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]</rows>
+        <cols>([federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:age_category:nk] / [federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk])</cols>
+      </table>
+      <simple-id uuid='{645C2D8A-7AA9-47E0-83CF-B3A40991FA4C}' />
+    </worksheet>
+    <worksheet name='error_paso'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>errores totales por paso</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column-instance column='[user_error]' derivation='Count' name='[pcto:cnt:user_error:qk]' pivot='key' type='quantitative'>
+              <table-calc ordering-type='Rows' type='PctTotal' />
+            </column-instance>
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column-instance column='[user_error]' derivation='Sum' name='[sum:user_error:qk]' pivot='key' type='quantitative' />
+            <column caption='User Error' datatype='real' name='[user_error]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:process_step:nk]' />
+              <groupfilter function='member' level='[none:process_step:nk]' member='&quot;start&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;step_1&quot;</bucket>
+              <bucket>&quot;step_2&quot;</bucket>
+              <bucket>&quot;step_3&quot;</bucket>
+              <bucket>&quot;confirm&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[sum:user_error:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' />
+              <text column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[pcto:cnt:user_error:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[sum:user_error:qk]</rows>
+        <cols>([federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk] / [federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk])</cols>
+      </table>
+      <simple-id uuid='{7AA45112-D417-41B1-993F-E1AC4D45CB4A}' />
+    </worksheet>
+    <worksheet name='frecuency'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>cantidad que el usuario accede a cada paso</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column-instance column='[client_id]' derivation='Count' name='[cnt:client_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;start&quot;</bucket>
+              <bucket>&quot;step_1&quot;</bucket>
+              <bucket>&quot;step_2&quot;</bucket>
+              <bucket>&quot;step_3&quot;</bucket>
+              <bucket>&quot;confirm&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' />
+              <text column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]</rows>
+        <cols>([federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk] / [federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk])</cols>
+      </table>
+      <simple-id uuid='{F0D222E5-3A32-4BD1-A18A-575C22EDFAA5}' />
+    </worksheet>
+    <worksheet name='time_spend'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>avg tiempo (segundos) por proceso</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column-instance column='[time_spend]' derivation='Avg' name='[avg:time_spend:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+            <column-instance column='[process_step]' derivation='None' name='[none:process_step:nk]' pivot='key' type='nominal' />
+            <column caption='Process Step' datatype='string' name='[process_step]' role='dimension' type='nominal' />
+            <column caption='Time Spend' datatype='real' name='[time_spend]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:process_step:nk]' />
+              <groupfilter function='member' level='[none:process_step:nk]' member='&quot;confirm&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[avg:time_spend:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' />
+              <text column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[avg:time_spend:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[avg:time_spend:qk]</rows>
+        <cols>([federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:process_step:nk] / [federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk])</cols>
+      </table>
+      <simple-id uuid='{F2F2EE75-928E-430A-87E7-FAEF21CADE7E}' />
+    </worksheet>
+    <worksheet name='total_users'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>total_views</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='data_final_1' name='federated.0vsvptf1n9cda610fh3lp1u4zyhv' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0vsvptf1n9cda610fh3lp1u4zyhv'>
+            <column caption='Variation x' datatype='string' name='[Variation_x]' role='dimension' type='nominal' />
+            <column caption='Client Id' datatype='integer' name='[client_id]' role='dimension' type='ordinal' />
+            <column-instance column='[client_id]' derivation='Count' name='[cnt:client_id:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Variation_x]' derivation='None' name='[none:Variation_x:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' scope='rows' value='' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' />
+              <text column='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]</rows>
+        <cols>[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]</cols>
+      </table>
+      <simple-id uuid='{D7C15697-C1E9-4450-9B26-6F3E2372129F}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='73501' id='7' param='horz' type-v2='layout-flow' w='49524' x='476' y='25500'>
+            <zone h='73501' id='5' type-v2='layout-basic' w='40000' x='476' y='25500'>
+              <zone h='36751' id='3' name='edades' w='40000' x='476' y='25500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='36750' id='9' name='edades_2' w='40000' x='476' y='62251'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='73501' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9524' x='40476' y='25500'>
+              <zone h='9114' id='8' name='edades' pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[sum:clnt_age:qk]' type-v2='color' w='9524' x='40476' y='25500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='8989' id='10' name='edades_2' pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type-v2='color' w='9524' x='40476' y='34614'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='34051' id='11' name='total_users' w='49524' x='50000' y='25500'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='39450' id='14' name='balance' w='49524' x='50000' y='59551'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='24501' id='15' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='99048' x='476' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1500' minheight='1500' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='22' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='188' h='24501' id='15' is-fixed='true' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='99048' x='476' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36751' id='3' is-fixed='true' name='edades' w='40000' x='476' y='25500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9114' id='8' name='edades' pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[sum:clnt_age:qk]' type-v2='color' w='9524' x='40476' y='25500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='264' h='34051' id='11' is-fixed='true' name='total_users' w='49524' x='50000' y='25500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='39450' id='14' is-fixed='true' name='balance' w='49524' x='50000' y='59551'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36750' id='9' is-fixed='true' name='edades_2' w='40000' x='476' y='62251'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8989' id='10' name='edades_2' pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type-v2='color' w='9524' x='40476' y='34614'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{F90117F3-45D3-48F7-842B-637A8E867341}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49001' id='3' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='99048' x='476' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='49001' id='5' type-v2='text' w='99048' x='476' y='50000'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='15'>Actualización de la página web</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='15' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='14' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='280' h='49001' id='3' is-fixed='true' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='99048' x='476' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='49001' id='5' type-v2='text' w='99048' x='476' y='50000'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='15'>Actualización de la página web</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{737ABBEC-B85E-48DC-A7A8-1B879BEDE527}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 3'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='49001' id='3' is-scaled='1' param='C:/Users/FX516/Downloads/9619f051-41e3-4743-8727-4a7a7952ef3d.png' type-v2='bitmap' w='41665' x='476' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='49001' id='5' is-scaled='1' param='C:/Users/FX516/Downloads/DALL·E-2024-08-08-16.44.png' type-v2='bitmap' w='42024' x='42141' y='50000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='24502' id='6' type-v2='text' w='41665' x='476' y='25498'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='28'>página antigua</run>
+              <run fontalignment='1'>Æ&#10;</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='24502' id='7' type-v2='text' w='42024' x='42141' y='25498'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='28'>página nueva</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='73503' id='8' type-v2='text' w='15359' x='84165' y='25498'>
+            <formatted-text>
+              <run bold='true' fontcolor='#000000' fontsize='16'>Factores:</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='16'>- Tiempo por paso</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='16'>- Errores por paso</run>
+              <run>Æ&#10;&#10;&#10;&#10;&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='16'>Pasos:</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='16'>- Start</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='16'>- Step_1</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='16'>- Step_2</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='16'>- Step_3</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontcolor='#000000' fontsize='16'>- Confirm</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='24499' id='9' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='99048' x='476' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='16' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='188' h='24499' id='9' is-fixed='true' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='99048' x='476' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='24502' id='6' type-v2='text' w='41665' x='476' y='25498'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='28'>página antigua</run>
+                    <run fontalignment='1'>Æ&#10;</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='24502' id='7' type-v2='text' w='42024' x='42141' y='25498'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontcolor='#000000' fontsize='28'>página nueva</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='73503' id='8' type-v2='text' w='15359' x='84165' y='25498'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='16'>Factores:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='16'>- Tiempo por paso</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='16'>- Errores por paso</run>
+                    <run>Æ&#10;&#10;&#10;&#10;&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='16'>Pasos:</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='16'>- Start</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='16'>- Step_1</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='16'>- Step_2</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='16'>- Step_3</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontcolor='#000000' fontsize='16'>- Confirm</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49001' id='3' is-fixed='true' is-scaled='1' param='C:/Users/FX516/Downloads/9619f051-41e3-4743-8727-4a7a7952ef3d.png' type-v2='bitmap' w='41665' x='476' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49001' id='5' is-fixed='true' is-scaled='1' param='C:/Users/FX516/Downloads/DALL·E-2024-08-08-16.44.png' type-v2='bitmap' w='42024' x='42141' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{16A2BE93-37C1-4932-AD06-31E8101647F8}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 4'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='74033' id='7' param='horz' type-v2='layout-flow' w='99048' x='476' y='24968'>
+            <zone h='74033' id='5' type-v2='layout-basic' w='89524' x='476' y='24968'>
+              <zone h='74033' id='3' name='time_spend' w='29226' x='476' y='24968'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='74033' id='9' name='error_paso' w='34405' x='29702' y='24968'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='74033' id='15' name='frecuency' w='25893' x='64107' y='24968'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='74033' id='6' is-fixed='true' param='vert' type-v2='layout-flow' w='9524' x='90000' y='24968'>
+              <zone h='8989' id='8' name='time_spend' pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type-v2='color' w='9524' x='90000' y='24968'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='23969' id='12' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='99048' x='476' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1150' minheight='1150' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='20' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='184' h='23969' id='12' is-fixed='true' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='99048' x='476' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='74033' id='3' is-fixed='true' name='time_spend' w='29226' x='476' y='24968'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8989' id='8' name='time_spend' pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type-v2='color' w='9524' x='90000' y='24968'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='74033' id='9' is-fixed='true' name='error_paso' w='34405' x='29702' y='24968'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='74033' id='15' is-fixed='true' name='frecuency' w='25893' x='64107' y='24968'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{01AB1739-6859-4058-BC04-E0F76947DE50}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 5'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='8' param='horz' type-v2='layout-flow' w='99048' x='476' y='999'>
+            <zone h='98002' id='6' type-v2='layout-basic' w='89524' x='476' y='999'>
+              <zone h='23970' id='3' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='89524' x='476' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='74032' id='5' name='age' w='44761' x='476' y='24969'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='74032' id='10' name='balance_diff' w='44763' x='45237' y='24969'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98002' id='7' is-fixed='true' param='vert' type-v2='layout-flow' w='9524' x='90000' y='999'>
+              <zone h='8989' id='9' name='age' pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type-v2='color' w='9524' x='90000' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='14232' id='11' name='balance_diff' pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' type-v2='size' w='9524' x='90000' y='9988'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='16' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='184' h='23970' id='3' is-fixed='true' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='89524' x='476' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='74032' id='5' is-fixed='true' name='age' w='44761' x='476' y='24969'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='8989' id='9' name='age' pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type-v2='color' w='9524' x='90000' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='74032' id='10' is-fixed='true' name='balance_diff' w='44763' x='45237' y='24969'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='14232' id='11' name='balance_diff' pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' type-v2='size' w='9524' x='90000' y='9988'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{FD8262CF-8A8F-45F0-B69D-68D363A0ED8E}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 6'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone forceUpdate='true' h='24501' id='3' type-v2='text' w='99034' x='483' y='25499'>
+            <formatted-text>
+              <run bold='true' fontalignment='1' fontsize='24'>CONCLUSIÓN</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone forceUpdate='true' h='49001' id='5' type-v2='text' w='99034' x='483' y='50000'>
+            <formatted-text>
+              <run bold='true' fontsize='22'>- Mejorar la interfaz del paso 1 para que de menos errores o quedarnos con la antigua</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='22'>- La página nueva capta más clientes y llegan más  a terminar el proceso</run>
+              <run>Æ&#10;</run>
+              <run bold='true' fontsize='22'>- La nueva página web no cambia el público obejtivo de la empresa</run>
+            </formatted-text>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='24500' id='6' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='99034' x='483' y='999'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='11' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='188' h='24500' id='6' is-fixed='true' is-scaled='1' param='C:/Users/FX516/Downloads/Vanguard-Logo-1975.png' type-v2='bitmap' w='99034' x='483' y='999'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='24501' id='3' type-v2='text' w='99034' x='483' y='25499'>
+                  <formatted-text>
+                    <run bold='true' fontalignment='1' fontsize='24'>CONCLUSIÓN</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='49001' id='5' type-v2='text' w='99034' x='483' y='50000'>
+                  <formatted-text>
+                    <run bold='true' fontsize='22'>- Mejorar la interfaz del paso 1 para que de menos errores o quedarnos con la antigua</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='22'>- La página nueva capta más clientes y llegan más  a terminar el proceso</run>
+                    <run>Æ&#10;</run>
+                    <run bold='true' fontsize='22'>- La nueva página web no cambia el público obejtivo de la empresa</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{7EFAAE72-063D-406C-8BF8-EF8CBFCFA550}' />
+    </dashboard>
+    <dashboard name='Historia 1' type='storyboard'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='1' param='vert' removable='false' type-v2='layout-flow' w='99034' x='483' y='999'>
+            <zone h='1248' id='3' type-v2='title' w='99034' x='483' y='999' />
+            <zone h='12609' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='99034' x='483' y='2247' />
+            <zone h='84145' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='99034' x='483' y='14856'>
+              <flipboard active-id='4' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Cambio WEB' captured-sheet='Dashboard 2' id='1' />
+                  <story-point caption='Contexto' captured-sheet='Dashboard 3' id='3' />
+                  <story-point caption='info_web' captured-sheet='Dashboard 1' id='2'>
+                    <capturedDeltas>
+                      <worksheet name='balance'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <format attr='title' class='0' field='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' scope='rows' value='' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                      <worksheet name='edades_2'>
+                        <style delta-type='added'>
+                          <style-rule element='axis'>
+                            <format attr='title' class='0' field='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' scope='rows' value='' />
+                          </style-rule>
+                        </style>
+                      </worksheet>
+                    </capturedDeltas>
+                  </story-point>
+                  <story-point caption='conclusion' captured-sheet='Dashboard 4' id='4' />
+                  <story-point caption='hipotesis' captured-sheet='Dashboard 5' id='5' />
+                  <story-point caption='FIN' captured-sheet='' id='6' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{C069DDEA-A5F3-4D8F-9641-CE838D1A1614}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='37'>
+    <window class='worksheet' name='edades'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[sum:clnt_age:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{310A9F36-2230-46CA-B06F-100A396DC88C}' />
+    </window>
+    <window class='worksheet' name='edades_2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{95BF749C-7C9E-4238-A4ED-F10E7568ADF7}' />
+    </window>
+    <window class='worksheet' name='total_users'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{44CB0754-7B8E-42F8-A628-C4EABA70B2EF}' />
+    </window>
+    <window class='worksheet' name='balance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EB3544EE-0F3C-4EAC-8F67-97BEBA5786FE}' />
+    </window>
+    <window class='worksheet' name='time_spend'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{19FE3EDF-945F-4AF2-88A6-24BF79156B1B}' />
+    </window>
+    <window class='worksheet' name='error_paso'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3EAB1C9A-84D6-45A2-9432-7C4DC0A00DE5}' />
+    </window>
+    <window class='worksheet' name='balance_diff'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[cnt:client_id:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{511EA29D-E5C2-4137-837D-26E119A951D6}' />
+    </window>
+    <window class='worksheet' name='balance_time'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:balance_category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B9F444B3-86EF-4732-BB85-9D28B4FE0921}' />
+    </window>
+    <window class='worksheet' name='alto_valor'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{65E564D5-D882-4D19-BB6E-3091C565AD56}' />
+    </window>
+    <window class='worksheet' name='alto_valor2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5C38CB83-2C3C-420F-84E0-721AD09513D7}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='balance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='edades' />
+        <viewpoint name='edades_2'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='total_users'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{BD9B8CAD-D975-41A9-BCF9-A5C4B06C3C88}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{20A322AD-C45F-4130-A27C-6463C810063D}' />
+    </window>
+    <window class='dashboard' name='Dashboard 3'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{4421B15A-71EA-4423-9559-545226911907}' />
+    </window>
+    <window class='dashboard' name='Dashboard 4'>
+      <viewpoints>
+        <viewpoint name='error_paso'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='frecuency'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='time_spend'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{E2BFF137-9492-465A-A39F-D64EB711A428}' />
+    </window>
+    <window class='dashboard' name='Dashboard 5'>
+      <viewpoints>
+        <viewpoint name='age'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='balance_diff' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{A934BED3-616F-49D9-992A-893450D02B2A}' />
+    </window>
+    <window class='worksheet' name='frecuency'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{3141CCE8-7315-4191-B1EB-091D784C9EBB}' />
+    </window>
+    <window class='worksheet' name='age'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='174'>
+            <card pane-specification-id='0' param='[federated.0vsvptf1n9cda610fh3lp1u4zyhv].[none:Variation_x:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A83B0BEE-B65C-48D9-AF78-7A2716A04BE6}' />
+    </window>
+    <window class='worksheet' name='Hoja 13'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{56450507-BB5D-4E0D-95F9-60293DFA94B7}' />
+    </window>
+    <window class='dashboard' name='Dashboard 6'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{C46D9B80-085A-4299-806B-688907083D12}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Historia 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{3C0E2533-CBFF-4B3B-AFDE-0C52602EC3A3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Historia 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
